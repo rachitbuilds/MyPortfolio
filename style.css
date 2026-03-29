@@ -212,13 +212,15 @@ a{
     justify-content: center;
 }
 .card {
-    text-align: center;
+    flex-direction: column;
+    justify-content: center;
     flex: 1;
-    max-width: 100px;
-    min-width: 80px;
+    max-width: 80px;
+    min-width: 60px;
 }
 
 .card h2 {
+    font-size: 1.2rem;
     margin-top: 10px;
 }
 .card img{

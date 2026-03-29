@@ -40,6 +40,9 @@
     .hero {
         flex-direction: column;
     }
+    .nav-logo img {
+        width: 100px;
+    }
     .header-pic {
         max-width: 350px;
     }
@@ -67,6 +70,9 @@
     }
 }
 @media screen and (max-width: 479px){
+    .nav-logo img {
+        width: 80px;
+    }
     .main-buttons {
         justify-content: center;
     }
