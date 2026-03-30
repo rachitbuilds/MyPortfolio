@@ -21,7 +21,6 @@
                 <a class="hover-links" href="#skill">Skills</a>
                 <a class="hover-links" href="#project">Projects</a>
                 <a class="hover-links" href="#contact">Contact</a>
-                <a class="zoom-in-effect search-icon" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
             </div>
             <a href="#" class="zoom-in-effect nav-toggle"><i class="fa-solid fa-bars"></i></a>
         </div>
@@ -156,4 +155,23 @@
         </form>
     </section>
 </body>
+<script>
+    const toggleBtn = document.querySelector(".nav-toggle");
+    const navLinks = document.querySelector(".nav-links");
+    const icon = toggleBtn.querySelector("i");
+    
+    toggleBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        navLinks.classList.toggle("active");
+        icon.classList.toggle("fa-bars");
+        icon.classList.toggle("fa-xmark");
+    });
+    document.addEventListener("click", (e) => {
+        if (!navLinks.contains(e.target) && !toggleBtn.contains(e.target)) {
+            navLinks.classList.remove("active");
+            icon.classList.add("fa-bars");
+            icon.classList.remove("fa-xmark");
+        }
+    });
+</script>
 </html>

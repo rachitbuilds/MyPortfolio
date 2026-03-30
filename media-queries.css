@@ -8,8 +8,30 @@
     p {
         font-size: 1.1rem;
     }
-    .nav-links {
+    nav {
+        position: relative;
+    }
+    .hover-links:after {
         display: none;
+    }
+    .nav-links {
+        transform: none;
+        opacity: 1;
+        animation: none;
+        z-index: 1;
+        flex-direction: column;
+        position: absolute;
+        padding: 80px;
+        width: 100vw;
+        height: 100vh;
+        top: 100%;
+        left: -100%;
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(10px);
+        transition: 0.3s ease-in-out;
+    }
+    .nav-links.active {
+        left: 0;
     }
     .nav-toggle {
         display: block;
@@ -25,7 +47,7 @@
         font-size: 1.4rem;
     }
     .social-icon i {
-        font-size: 1rem;
+        font-size: 1.4rem;
     }
     .primary-button {
         padding: 5px;
@@ -33,7 +55,6 @@
     .secondary-button {
         padding: 5px;
     }
-    
 
 }
 @media screen and (max-width: 767px){
