@@ -5,18 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Playwrite+PE:wght@100..400&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         .coming-container {
-            height: 100vh;
             display: flex;
+            height: 100vh;
             justify-content: center;
             align-items: center;
-            font-size: 5rem;
-            background-color: #f8f8f5;
-            columns: #333;
+            text-align: center;
+            background-color: #fdfaf0;
+            color: #4a4a4a;
         }
+        .coming-content h1 {
+            font-family: "Patrick Hand", cursive;
+            font-size: 4rem;
+            padding: 20px;
+            letter-spacing: 1px;
+        }
+        .rocket {
+            font-size: 4rem;
+            margin-top: 10px;
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0% {
+                transform: translateY(0px) rotate(0deg);
+            }
+            50% {
+                transform: translateY(-20px) rotate(10deg);
+            }
+            100% {
+                transform: translateY(0px) rotate(0deg);
+            }
+        }
+        .subtext {
+            font-family: "Playwrite PE", cursive;
+            font-size: 2rem;
+            margin-top: 10px;
+        }
+
     </style>
 </head>
 <body>
-    <div class="coming-container">Coming Soon 🚀</div>
+    <div class="coming-container">
+        <div class="coming-content">
+            <h1>Coming Soon </h1>
+            <div class="rocket">🚀</div>
+            <p class="subtext">Something exciting is in the works</p>
+        </div>
+    </div>
 </body>
 </html>
