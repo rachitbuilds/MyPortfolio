@@ -30,15 +30,28 @@
         backdrop-filter: blur(10px);
         transition: 0.3s ease-in-out;
     }
-    .nav-links.active {
+    .active {
         left: 0;
     }
     .nav-toggle {
         display: block;
+        background: none;
+        border: none;
+        cursor: pointer;
         margin-right: 20px;
         transform: translateX(100%);
         opacity: 0;
         animation: slideIn 1s ease  forwards;
+    }
+    #nav-icon {
+        transition: 0.3s ease;
+    }
+    
+    #nav-icon.fa-xmark {
+        transform: rotate(180deg);
+    }
+    .long-card {
+        margin-inline: 20px;
     }
     .section-heading {
         font-size: 1.8rem;
@@ -87,8 +100,11 @@
         font-size: 0.8rem;
     }
     .contact-icons {
-        gap: 5px;
+        gap: 10px;
     }
+    .mail i, .icons i, .icons a {
+    font-size: 1.2rem;
+}
 }
 @media screen and (max-width: 479px){
     .nav-logo img {
@@ -96,5 +112,11 @@
     }
     .main-buttons {
         justify-content: center;
+    }
+    .card {
+       max-width: 60px;
+    }
+    .contact-form {
+        min-width: 200px;
     }
 }

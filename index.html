@@ -12,7 +12,7 @@
     <nav>
         <div class="flex container navbar">
             <div class="nav-logo">
-                <a  href="index.html"><img  src="logo-com-final.jpeg"></a>
+                <a  href="index.html"><img  src="logo-com-final.jpeg" alt="rachit logo"></a>
             </div>
             <ul class="nav-links flex">
                 <li><a class="hover-links" href="index.html">Home</a></li>
@@ -22,12 +22,12 @@
                 <li><a class="hover-links" href="#project">Projects</a></li>
                 <li><a class="hover-links" href="#contact">Contact</a></li>
             </ul>
-            <a href="#" class="zoom-in-effect nav-toggle"><i class="fa-solid fa-bars"></i></a>
+            <button class="zoom-in-effect nav-toggle"><i id="nav-icon" class="fa-solid fa-bars"></i></button>
         </div>
     </nav>
     <header class="hero container flex">
         <div class="header-pic">
-            <img src="header-pic-com-final.jpeg" alt="My Pic" >
+            <img src="header-pic-com-final.jpeg" alt="My Profile Pic" >
         </div>
 
         <div class="header-text flex">
@@ -61,23 +61,23 @@
         <h2 class="section-heading">What I Know</h2>
         <div class="skill-cards flex">
             <div class="card flex hover-cards">
-                <img src="html-removebg-preview (1).png" alt="html logo">
+                <img src="html-removebg-preview (1).png" loading="lazy" alt="html logo">
                 <h2>HTML</h2>
             </div>
             <div class="card flex hover-cards">
-                <img src="css-removebg-preview (1).png" alt="css logo">
+                <img src="css-removebg-preview (1).png" loading="lazy" alt="css logo">
                 <h2>CSS</h2>
             </div>
-            <div class="card flex hover-cards">
-                <img src="js (1).png" alt="js logo">
+            <div class="card flex hover-cards long-card">
+                <img src="js (1).png" loading="lazy" alt="js logo">
                 <h2>JavaScript</h2>
             </div>
             <div class="card flex hover-cards">
-                <img src="github-pn-com (1).jpeg" alt="github logo">
+                <img src="github-pn-com (1).jpeg" loading="lazy" alt="github logo">
                 <h2>GitHub</h2>
             </div>
             <div class="card flex hover-cards">
-                <img src="C-removebg-preview.png" alt="C logo">
+                <img src="C-removebg-preview.png" loading="lazy" alt="C logo">
                 <h2>C</h2>
             </div>
         </div>
@@ -87,19 +87,19 @@
             <h2 class="section-heading">Featured Projects</h2>
             <div class="project-cards flex">
                 <div class="pro-card hover-cards">
-                    <img src="Amazon-com.jpeg" alt="amazon">
+                    <img src="Amazon-com.jpeg" loading="lazy" alt="amazon">
                     <h2>Amazon clone</h2>
                     <p>An e-commerce website inspired by Amazon, built using HTML and CSS with a focus on layout, design, and user interface.</p>
                     <a href="https://github.com/rachitbuilds/Amazon">View Details</a>
                 </div>
                 <div class="pro-card hover-cards">
-                    <img src="UsabilityHub-com.jpeg" alt="UsabilityHub">
+                    <img src="UsabilityHub-com.jpeg" loading="lazy" alt="UsabilityHub">
                     <h2>UsabilityHub</h2>
                     <p>A modern landing page inspired by UsabilityHub, designed using HTML and CSS to practice clean layouts, sections, and responsive design.</p>
                     <a href="https://github.com/rachitbuilds/Usability-Hub">View Details</a>
                 </div>
                 <div class="pro-card hover-cards">
-                    <img src="Portfolio.png" alt="My Portfolio">
+                    <img src="Portfolio.png" loading="lazy" alt="My Portfolio">
                     <h2>My Portfolio</h2>
                     <p>A personal portfolio website to showcase my projects and skills, built with a modern UI and responsive design using HTML and CSS.</p>
                     <a href="https://github.com/rachitbuilds/MyPortfolio">View Details</a>
@@ -134,7 +134,7 @@
             <div class="name flex">
                 <div class="first-name">
                     <label for="first-name">First Name</label>
-                    <input type="text" name="first-name" id="first-name">
+                    <input type="text" name="first-name" id="first-name" required>
                 </div>
                 <div class="last-name">
                     <label for="last-name">Last Name</label>
@@ -143,7 +143,7 @@
             </div>
             <div class="email">
                 <label for="email">Email*</label>
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" id="email" required>
             </div>
             <div class="message">
                 <label for="message">Message</label>
@@ -154,24 +154,7 @@
             </div>
         </form>
     </section>
+
+    <script src="script.js"></script>
 </body>
-<!-- <script>
-    const toggleBtn = document.querySelector(".nav-toggle");
-    const navLinks = document.querySelector(".nav-links");
-    const icon = toggleBtn.querySelector("i");
-    
-    toggleBtn.addEventListener("click", (e) => {
-        e.preventDefault();
-        navLinks.classList.toggle("active");
-        icon.classList.toggle("fa-bars");
-        icon.classList.toggle("fa-xmark");
-    });
-    document.addEventListener("click", (e) => {
-        if (!navLinks.contains(e.target) && !toggleBtn.contains(e.target)) {
-            navLinks.classList.remove("active");
-            icon.classList.add("fa-bars");
-            icon.classList.remove("fa-xmark");
-        }
-    });
-</script> -->
 </html>
