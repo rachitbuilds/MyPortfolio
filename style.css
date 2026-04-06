@@ -19,6 +19,7 @@ h1 {
 }
 h2 {
     font-family: "Nunito", sans-serif;
+    font-size: 1.4rem;
 }
 p {
     font-size: 1.25rem;
@@ -162,6 +163,23 @@ li {
     flex: 1;
     max-width: 450px;
 
+}
+
+.blink-cursor {
+    display: inline-block;
+    margin-left: 5px;
+    animation: blink 0.8s infinite;
+}
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .header-pic img {

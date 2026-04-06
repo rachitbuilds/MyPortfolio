@@ -26,4 +26,16 @@ body.addEventListener("click", (e) => {
         icon.classList.add("fa-bars");}
 });
 
+let text = "BCA Student | Aspiring Web Developer | SSC Aspirant";
+let i = 0;
+let element = document.querySelector("#typing");
+
+let typeEffect = () => {
+    if(i < text.length) {
+        element.textContent = element.textContent + text.charAt(i);
+        i++;
+        setTimeout(typeEffect, 100); // wait 50 millisecond then run function again
+    }
+}
+typeEffect();
     
