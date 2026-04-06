@@ -27,6 +27,9 @@ p {
 a{
     text-decoration: none;
 }
+li {
+    list-style-type: none;
+}
 .hover-links {
     font-size: 1.25rem;
     color: #111111;
