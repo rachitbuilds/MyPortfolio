@@ -34,8 +34,25 @@ let typeEffect = () => {
     if(i < text.length) {
         element.textContent = element.textContent + text.charAt(i);
         i++;
-        setTimeout(typeEffect, 100); // wait 50 millisecond then run function again
+        setTimeout(typeEffect, 100); // wait 100 millisecond then run function again
     }
 }
 typeEffect();
+
+// add scroll reveal effect 
     
+let observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+            if(entry.isIntersecting){
+                entry.target.classList.add("reveal");
+                observer.unobserve(entry.target);
+            }
+    });
+}, {
+    threshold: 0.1,
+    }
+);
+let boxes = document.querySelectorAll(".hidden");
+boxes.forEach(box => {
+    observer.observe(box);
+});

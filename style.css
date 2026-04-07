@@ -58,7 +58,7 @@ li {
 .hover-cards {
     transition: 0.3s ease;
 }
-.hover-cards:hover {
+.hover-cards.reveal:hover {
     transform: translateY(-6px);
 }
 
@@ -73,7 +73,7 @@ li {
     box-shadow: 0 0 10px #ff3c78;
     transition: all 0.25s ease;
 }
-.primary-button:hover {
+.primary-button.reveal:hover {
     transform: scale(1.05);
     box-shadow: 0 0 20px #FF0018;
 }
@@ -86,7 +86,7 @@ li {
     position: relative;
     transition: all 0.25s ease;
 }
-.secondary-button:hover {   
+.secondary-button.reveal:hover {   
     transform: scale(1.05);
     color: #4a4a4d;
     border-color: #4a4a4d;
@@ -116,6 +116,16 @@ li {
     font-weight: 700;
     letter-spacing: 1px;
     padding-block: 20px;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 1s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.hidden.reveal {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .navbar {
