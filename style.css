@@ -267,15 +267,14 @@ li {
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
+    align-items: flex-start;
 }
 .pro-card {
     padding: 20px;
     background-color: white;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    flex: 1;
-    min-width: 300px;
-    max-width: 400px;
+    flex: 0 0 350px;
 }
 .pro-card h2 {
     font-size: 1.4rem;

@@ -50,6 +50,9 @@
     #nav-icon.fa-xmark {
         transform: rotate(180deg);
     }
+    .pro-card {
+        flex: 0 0 300px;
+    }
     .long-card {
         margin-inline: 20px;
     }
@@ -89,6 +92,10 @@
     }
     .header-text p {
         text-align: center;
+    }
+    .pro-card {
+        flex: 0 1 300px;
+        max-width: 350px;
     }
     .skill-cards {
         gap: 20px;
