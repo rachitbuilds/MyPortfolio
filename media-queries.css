@@ -53,9 +53,7 @@
     .pro-card {
         flex: 0 0 300px;
     }
-    .long-card {
-        margin-inline: 20px;
-    }
+    
     .section-heading {
         font-size: 1.8rem;
     }
@@ -120,9 +118,7 @@
     .main-buttons {
         justify-content: center;
     }
-    .card {
-       max-width: 60px;
-    }
+    
     .contact-form {
         min-width: 200px;
     }

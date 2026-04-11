@@ -246,13 +246,13 @@ li {
 .card {
     flex-direction: column;
     justify-content: center;
-    flex: 1;
-    max-width: 80px;
-    min-width: 60px;
+    align-items: center;
+    gap: 6px;
+    flex: 0 0 80px;
 }
 
 .card h2 {
-    font-size: 1.5rem;
+    font-size: 1.14rem;
     margin-top: 10px;
 }
 .card img{
